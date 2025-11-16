@@ -1,0 +1,131 @@
+/* ----------------------------------------------------------------
+   1. Estilos Gerais
+   ---------------------------------------------------------------- */
+
+* {
+    /* Define o modelo de caixa para incluir padding e borda no tamanho total */
+    box-sizing: border-box;
+    /* Define a fonte padrão para todo o documento */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Cor de fundo suave para o corpo da página */
+    background-color: #f0f2f5; 
+    /* Remove a margem padrão do body */
+    margin: 0;
+    /* Centraliza o conteúdo principal vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar no topo da tela, não no centro total */
+    padding-top: 50px; /* Adiciona um espaço no topo */
+    min-height: 100vh;
+}
+
+/* ----------------------------------------------------------------
+   2. Estilos do Container Principal (main)
+   ---------------------------------------------------------------- */
+
+main {
+    /* Define a largura máxima do container */
+    width: 100%;
+    max-width: 400px;
+    /* Fundo branco para o container */
+    background-color: #ffffff;
+    /* Adiciona padding interno */
+    padding: 30px;
+    /* Bordas suaves */
+    border-radius: 12px;
+    /* Sombra suave para dar efeito 3D (similar ao do card na imagem) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    /* Cor do título (azul da paleta) */
+    color: #007bff;
+    /* Centraliza o título */
+    text-align: center;
+    /* Margem inferior */
+    margin-bottom: 25px;
+    /* Aumenta a fonte e a deixa em negrito */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------
+   3. Estilos dos Elementos de Formulário (input, select, button)
+   ---------------------------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+    margin-bottom: 25px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Borda fina e cinza */
+    border: 1px solid #ccc;
+    /* Tamanho da fonte */
+    font-size: 1em;
+}
+
+/* Foco nos campos */
+input:focus,
+select:focus {
+    border-color: #007bff; /* Borda azul ao focar */
+    outline: none; /* Remove o outline padrão do navegador */
+}
+
+button {
+    /* Cor de fundo principal (azul) */
+    background-color: #007bff;
+    /* Cor do texto (branco) */
+    color: white;
+    padding: 12px;
+    /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Remove a borda padrão */
+    border: none;
+    /* Aumenta a fonte e a deixa em negrito */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer; /* Indica que é clicável */
+    /* Transição suave para o hover */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* Azul um pouco mais escuro ao passar o mouse */
+    background-color: #0056b3; 
+}
+
+/* ----------------------------------------------------------------
+   4. Estilos dos Parágrafos de Resultado (p)
+   ---------------------------------------------------------------- */
+
+p {
+    /* Estilo de bloco para os resultados */
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 10px 0; /* Espaçamento entre os resultados */
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Estilo especial para o parágrafo Total */
+#Total {
+    /* Cor de fundo principal (azul), como na imagem */
+    background-color: #007bff; 
+    color: white; /* Texto branco */
+    font-weight: bold;
+    /* Borda azul mais escura (opcional) */
+    border-color: #0056b3; 
+}
